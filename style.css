@@ -1,0 +1,98 @@
+#wcfbt-frequently-bought-together {
+  padding-bottom: 1rem;
+}
+#wcfbt-frequently-bought-together .wrapper {
+  display: flex;
+}
+@media only screen and (max-width: 576px) {
+  #wcfbt-frequently-bought-together .wrapper {
+    display: block;
+  }
+}
+#wcfbt-frequently-bought-together .list {
+  display: flex;
+  align-items: center;
+}
+#wcfbt-frequently-bought-together .list .item {
+  display: flex;
+  align-items: center;
+}
+#wcfbt-frequently-bought-together .list .item a {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+@media only screen and (max-width: 576px) {
+  #wcfbt-frequently-bought-together .list .item a {
+    height: auto;
+    width: auto;
+  }
+}
+#wcfbt-frequently-bought-together .list .item:after {
+  font-size: 1.5rem;
+  content: " + ";
+  padding: 0 0.5rem;
+}
+#wcfbt-frequently-bought-together .list .item:last-child:after {
+  padding: 0;
+  content: "";
+}
+#wcfbt-frequently-bought-together .form-actions {
+  padding: 0.5rem;
+}
+#wcfbt-frequently-bought-together .form-actions p {
+  margin-bottom: 0.25rem;
+  color: #6d6d6d;
+  font-size: 0.9rem;
+}
+#wcfbt-frequently-bought-together span.amount {
+  color: #b12704;
+  font-size: 1.2rem;
+}
+#wcfbt-frequently-bought-together #wcfbt-add-to-cart-button {
+  background-color: #333;
+  padding: 0.125rem 0.25rem;
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+#wcfbt-frequently-bought-together #wcfbt-add-to-cart-form {
+  padding-top: 1rem;
+}
+#wcfbt-frequently-bought-together #wcfbt-add-to-cart-form label {
+  display: inline !important;
+}
+#wcfbt-frequently-bought-together #wcfbt-add-to-cart-form label:first-child:before {
+  content: "This item:";
+}
+@media only screen and (max-width: 576px) {
+  #wcfbt-frequently-bought-together #wcfbt-add-to-cart-form label:first-child:before {
+    content: "";
+  }
+}
+#wcfbt-frequently-bought-together #wcfbt-add-to-cart-form label span.price {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: normal;
+}
+#wcfbt-frequently-bought-together #wcfbt-add-to-cart-form label span.price span.woocommerce-Price-amount {
+  font-size: 1rem;
+  margin: 0;
+  line-height: normal;
+  content: "";
+}
+#wcfbt-frequently-bought-together #wcfbt-add-to-cart-form label span.price span.woocommerce-Price-amount:before {
+  content: "" !important;
+}
+#wcfbt-frequently-bought-together #wcfbt-add-to-cart-form label select {
+  background-color: #fff;
+  color: #333;
+  max-width: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */

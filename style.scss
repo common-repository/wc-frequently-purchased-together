@@ -1,0 +1,111 @@
+$phone-width: "only screen and (max-width: 576px)";
+
+#wcfbt-frequently-bought-together{
+
+    padding-bottom: 1rem;
+
+    .wrapper{ 
+        display: flex; 
+        @media #{$phone-width}{ display: block;  }
+    }
+
+    .list{
+        display: flex;
+        align-items: center;
+
+        .item{
+            display: flex;
+            align-items: center;
+
+            a{ 
+                height: 150px; 
+                width: 150px;
+
+                @media #{$phone-width}{
+                    height: auto; 
+                    width: auto;
+                }
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+            }
+            
+            &:after{
+                font-size: 1.5rem;
+                content: ' + ';
+                padding: 0 .5rem;
+            }
+
+            &:last-child:after{
+                padding: 0;
+                content: '';
+            }
+        }
+    }
+
+    .form-actions{
+        padding: .5rem;
+
+        p{
+            margin-bottom: .25rem;
+            color: rgb(109, 109, 109);
+            font-size: 0.9rem;
+        }
+    }
+
+    span.amount{
+        color: #b12704;
+        font-size: 1.2rem;
+    }
+
+    #wcfbt-add-to-cart-button{
+        background-color: #333;
+        padding: .125rem .25rem;
+        color: #fff;
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: .75rem
+    }
+    
+    #wcfbt-add-to-cart-form{
+        padding-top: 1rem;
+
+        label{ 
+            display: inline !important; 
+            
+            &:first-child:before{
+                content: "This item:";
+
+                @media #{$phone-width}{ content: ""; }
+            }
+
+            span.price{
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                line-height: normal;
+                
+                span.woocommerce-Price-amount{
+                    font-size: 1rem;
+                    margin: 0;
+                    line-height: normal;
+                    content: '';
+    
+                    &:before{ content: '' !important }
+                }
+            }
+
+            select { 
+                background-color: #fff;
+                color: #333;
+                max-width: 150px;
+            }
+            
+        }
+
+
+    }
+}
